@@ -3,3 +3,9 @@ html
         title Express Page access to jfrog
     body
         h1!= contenido
+        form(action="/", method="get")
+            input(type="text" name="tFilter")
+            input(type="submit", value="Enviar")
+
+        != datos
+        
